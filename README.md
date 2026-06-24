@@ -17,15 +17,25 @@ back in for you. You stay where you want to be, without the constant
 interruption.
 
 ## Install
-1. Install the [Tampermonkey](https://www.tampermonkey.net/) browser extension.
-2. Open the Tampermonkey dashboard → **Create a new script** (or **Utilities → Import**).
-3. Paste the contents of [`citytouch-autofill.user.js`](./citytouch-autofill.user.js) and save.
-4. **Edit the credentials** at the top of the script:
+1. Install the [Tampermonkey](https://www.tampermonkey.net/) browser extension:
+   - [Chrome Web Store](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+   - [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/tampermonkey/iikmkjmpaadaobahmlepeloendndfphd)
+   - [Firefox Add-ons](https://addons.mozilla.org/firefox/addon/tampermonkey/)
+2. **Enable "Allow User Scripts"** (required on recent Chrome/Edge, v138+, or
+   userscripts will silently not run):
+   - Open your browser's **Extensions** page (`chrome://extensions` or
+     `edge://extensions`).
+   - Find **Tampermonkey** and click **Details**.
+   - Turn on the **Allow User Scripts** toggle.
+   - On Firefox this step is not needed.
+4. Open the Tampermonkey dashboard → **Create a new script** (or **Utilities → Import**).
+5. Paste the contents of [`citytouch-autofill.user.js`](./citytouch-autofill.user.js) and save.
+6. **Edit the credentials** at the top of the script:
    ```js
    const USERNAME = 'your_username_here';
    const PASSWORD = 'your_password_here';
    ```
-5. Visit https://www.citytouch.com.bd/ — the form fills and submits automatically.
+7. Visit https://www.citytouch.com.bd/ — the form fills and submits automatically.
 
 ## How it works
 - The site is an Angular SPA that shows a loader before rendering the form.
