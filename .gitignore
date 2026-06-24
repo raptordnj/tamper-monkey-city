@@ -1,0 +1,6 @@
+# Local page dump copied from the live site — may contain CSRF/session tokens
+index.html
+
+# Editors / OS
+.DS_Store
+*.swp
