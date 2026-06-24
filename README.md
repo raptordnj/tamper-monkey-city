@@ -3,6 +3,19 @@
 A Tampermonkey userscript that auto-fills the username/password on
 [CityTouch](https://www.citytouch.com.bd/) and submits the login form.
 
+## Why this exists
+
+CityTouch logs you out aggressively — after only a short spell of inactivity
+your session expires and you are dropped back to the login screen. Having to
+retype your credentials over and over, several times a day, quickly becomes
+tedious and frustrating.
+
+This userscript was built to put an end to that annoyance. It quietly watches
+the page, and the moment the login form reappears — whether on first load or
+after yet another forced logout — it fills in your credentials and signs you
+back in for you. You stay where you want to be, without the constant
+interruption.
+
 ## Install
 1. Install the [Tampermonkey](https://www.tampermonkey.net/) browser extension.
 2. Open the Tampermonkey dashboard → **Create a new script** (or **Utilities → Import**).
