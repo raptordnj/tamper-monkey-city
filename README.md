@@ -1,5 +1,7 @@
 # CityTouch Auto Login (Tampermonkey)
 
+[বাংলায় পড়ুন](./README.bn.md)
+
 A Tampermonkey userscript that auto-fills the username/password on
 [CityTouch](https://www.citytouch.com.bd/) and submits the login form.
 
